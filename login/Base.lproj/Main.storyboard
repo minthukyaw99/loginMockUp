@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="login" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fRF-u2-Ogv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.72212114726027399" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6Fw-7P-TFd">
+                                <rect key="frame" x="16" y="0.0" width="288" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="feB-E6-LrF">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="176"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="240" verticalCompressionResistancePriority="740" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="44r-Hw-Jdt">
+                                        <rect key="frame" x="0.0" y="196" width="288" height="176"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d81-Kc-Ywx" customClass="UITextFieldX" customModule="login" customModuleProvider="target" propertyAccessControl="none">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="45.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.59999999999999998" alpha="0.4141695205479452" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="username_icon"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MDT-al-KTd" customClass="UITextFieldX" customModule="login" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="65.5" width="288" height="45"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.59999999999999998" alpha="0.40999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="email_icon"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IST-jZ-gNY" customClass="UIButtonX" customModule="login" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="130.5" width="288" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="tintColor" white="0.66666666669999997" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="   Let Me In" image="login">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                                        <real key="value" value="0.10000000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9A6-Jz-cWY">
+                                        <rect key="frame" x="0.0" y="392" width="288" height="176"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3q-PY-RRR" customClass="UIButtonX" customModule="login" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="68" width="82.5" height="40"/>
+                                                <color key="tintColor" white="0.66666666669999997" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="facebook-logo-button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                                        <real key="value" value="0.10000000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QU8-g4-PkG" customClass="UIButtonX" customModule="login" customModuleProvider="target">
+                                                <rect key="frame" x="102.5" y="68" width="83" height="40"/>
+                                                <color key="tintColor" white="0.66666666669999997" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="twitter-logo-button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                                        <real key="value" value="0.10000000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23R-vd-yOw" customClass="UIButtonX" customModule="login" customModuleProvider="target">
+                                                <rect key="frame" x="205.5" y="68" width="82.5" height="40"/>
+                                                <color key="tintColor" white="0.66666666669999997" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="google-plus"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                                        <real key="value" value="0.10000000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Fw-7P-TFd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CmS-Nh-RSQ"/>
+                            <constraint firstItem="fRF-u2-Ogv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dmk-aq-c5l"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fRF-u2-Ogv" secondAttribute="bottom" id="LCI-GR-E1q"/>
+                            <constraint firstAttribute="trailing" secondItem="fRF-u2-Ogv" secondAttribute="trailing" id="PJs-rs-Era"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Fw-7P-TFd" secondAttribute="bottom" id="Sd4-pd-GpI"/>
+                            <constraint firstItem="fRF-u2-Ogv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xka-p4-u14"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Fw-7P-TFd" secondAttribute="trailing" id="r6p-gq-5IS"/>
+                            <constraint firstItem="6Fw-7P-TFd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="uXe-OU-GUZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="136.95652173913044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="294" height="528"/>
+        <image name="email_icon" width="40" height="40"/>
+        <image name="facebook-logo-button" width="40" height="40"/>
+        <image name="google-plus" width="40" height="40"/>
+        <image name="login" width="64" height="60"/>
+        <image name="twitter-logo-button" width="40" height="40"/>
+        <image name="username_icon" width="40" height="40"/>
+    </resources>
+</document>
